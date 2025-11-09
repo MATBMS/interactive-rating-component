@@ -28,3 +28,7 @@ p {
   line-height: 22px;
   color: var(--color-grey-500);
 }
+
+.rating-answer {
+  color: var(--color-orange-500);
+}
