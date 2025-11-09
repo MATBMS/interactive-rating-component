@@ -12,6 +12,13 @@ form {
   display: none;
 }
 
+/* Remove default fieldset styling */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Add rating spacing */
 .rating-container {
   display: flex;

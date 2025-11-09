@@ -16,7 +16,7 @@
       <section id="form-card" class="card">
         <div class="card-container">
           <div class="icon-container">
-            <img src="./icons/icon-star.svg" alt="Star icon" height="13px" width="14px" class="icon-star">
+            <img src="./icons/icon-star.svg" alt="Rating star icon" height="13px" width="14px" class="icon-star">
           </div>
           <div class="text-content">
             <h1>How did we do?</h1>
@@ -25,32 +25,35 @@
               to help us improve our offering!
             </p>
             <form class="rating-form">
-              <div class="rating-container">
-                <input type="radio" id="rating-1" name="rating" value="1">
+              <fieldset class="rating-container">
+                <legend class="visually-hidden">Rate your experience from 1 to 5</legend>
+                <input type="radio" id="rating-1" name="rating" value="1" aria-describedby="rating-instruction">
                 <label for="rating-1">1</label>
 
-                <input type="radio" id="rating-2" name="rating" value="2">
+                <input type="radio" id="rating-2" name="rating" value="2" aria-describedby="rating-instruction">
                 <label for="rating-2">2</label>
 
-                <input type="radio" id="rating-3" name="rating" value="3">
+                <input type="radio" id="rating-3" name="rating" value="3" aria-describedby="rating-instruction">
                 <label for="rating-3">3</label>
 
-                <input type="radio" id="rating-4" name="rating" value="4">
+                <input type="radio" id="rating-4" name="rating" value="4" aria-describedby="rating-instruction">
                 <label for="rating-4">4</label>
 
-                <input type="radio" id="rating-5" name="rating" value="5">
+                <input type="radio" id="rating-5" name="rating" value="5" aria-describedby="rating-instruction">
                 <label for="rating-5">5</label>
-              </div>
-              <button type="submit" disabled>Submit</button>
+              </fieldset>
+              <div id="rating-instruction" class="visually-hidden">Select a rating from 1 to 5 stars</div>
+              <button type="submit" disabled aria-describedby="submit-hint">Submit</button>
+              <div id="submit-hint" class="visually-hidden">Please select a rating before submitting</div>
             </form>
           </div>
         </div>
       </section>
 
-      <section id="thank-you-card" class="card" style="display: none;">
+      <section id="thank-you-card" class="card hide">
         <div class="card-container">
-          <img src="./images/illustration-thank-you.svg" alt="illustration thank you" class="thank-you-image"
-            width="162px" height="108px">
+          <img src="./images/illustration-thank-you.svg" alt="Thank you illustration showing a payment terminal"
+            class="thank-you-image" width="162px" height="108px" loading="lazy">
           <p class="rating-answer">
             You selected out 0 of 5
           </p>
