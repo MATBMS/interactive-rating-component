@@ -9,4 +9,26 @@ button {
   /* style */
   border-radius: 22.5px;
   background: var(--color-orange-500);
+  /* typography (Text Preset 5 - Overpass Bold) */
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.87px;
+  color: var(--color-grey-950);
+  text-transform: uppercase;
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  button {
+    /* typography (Text Preset 5 - Overpass SemiBold) */
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.17px;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}

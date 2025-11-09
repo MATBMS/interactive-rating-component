@@ -33,3 +33,19 @@
   align-items: center;
   text-align: center;
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  .card {
+    width: 412px;
+    height: 416px;
+  }
+
+  .card-container {
+    width: 351px;
+    gap: var(--spacing-400);
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}

@@ -12,6 +12,7 @@
 /* Text Presets */
 
 h1 {
+  /* Text Preset 2 - Overpass Bold */
   font-family: var(--font-primary);
   font-size: 24px;
   font-style: normal;
@@ -21,6 +22,7 @@ h1 {
 }
 
 p {
+  /* Text Preset 5 - Overpass Regular */
   font-family: var(--font-primary);
   font-size: 14px;
   font-style: normal;
@@ -30,5 +32,21 @@ p {
 }
 
 .rating-answer {
+  /* Text Preset 5 - Overpass Regular */
   color: var(--color-orange-500);
+}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    /* Text Preset 1 - Overpass Bold */
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  p {
+    /* Text Preset 4 - Overpass Regular */
+    font-size: 15px;
+  }
 }

@@ -11,3 +11,14 @@
   border-radius: 20px;
   background: var(--color-grey-900);
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  .icon-star {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}
