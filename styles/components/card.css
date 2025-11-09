@@ -45,6 +45,10 @@
     width: 351px;
     gap: var(--spacing-400);
   }
+
+  #thank-you-card .card-container {
+    width: 340px;
+  }
 }
 
 /* DESKTOP (1440px and up) */
