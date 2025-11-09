@@ -28,10 +28,24 @@
   gap: var(--spacing-200);
 }
 
-#thank-you-card .card-container,
+#thank-you-card .card-container {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 #thank-you-card .text-content {
   align-items: center;
   text-align: center;
+}
+
+#thank-you-card .rating-answer {
+  text-align: center;
+}
+
+#thank-you-card .thank-you-image {
+  align-self: center;
 }
 
 /* TABLET (768px and up) */
