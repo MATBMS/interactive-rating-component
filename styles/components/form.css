@@ -30,6 +30,7 @@ form {
   width: 42px;
   height: 42px;
   padding: var(--spacing-100) var(--spacing-200);
+  cursor: pointer;
   /* style */
   border-radius: 21px;
   background-color: var(--color-grey-900);
@@ -41,6 +42,20 @@ form {
   line-height: 18px;
   letter-spacing: 1.87px;
   color: var(--color-grey-500);
+  /* animation */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change background and text color when a label is hovered */
+.rating-container label:hover {
+  background-color: var(--color-orange-500);
+  color: var(--color-grey-900);
+}
+
+/* Style the label when its radio input is selected */
+.rating-container input[type="radio"]:checked+label {
+  background-color: var(--color-white);
+  color: var(--color-grey-900);
 }
 
 /* TABLET (768px and up) */

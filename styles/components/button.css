@@ -8,7 +8,8 @@ button {
   width: 100%;
   /* style */
   border-radius: 22.5px;
-  background: var(--color-orange-500);
+  background-color: var(--color-white);
+  color: var(--color-grey-900);
   /* typography (Text Preset 5 - Overpass Bold) */
   font-family: var(--font-primary);
   font-size: 14px;
@@ -16,8 +17,13 @@ button {
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 1.87px;
-  color: var(--color-grey-950);
   text-transform: uppercase;
+}
+
+button:disabled {
+  background: var(--color-orange-500);
+  color: var(--color-grey-950);
+  cursor: not-allowed;
 }
 
 /* TABLET (768px and up) */
@@ -29,6 +35,3 @@ button {
     letter-spacing: 0.17px;
   }
 }
-
-/* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}
