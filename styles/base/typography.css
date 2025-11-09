@@ -2,5 +2,29 @@
 
 @font-face {
   font-family: 'Overpass';
-  src: url('../fonts/Overpass.ttf') format('truetype');
+  src: url('../../fonts/Overpass.ttf') format('truetype');
+}
+
+:root {
+  --font-primary: 'Overpass', sans-serif;
+}
+
+/* Text Presets */
+
+h1 {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+p {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--color-grey-500);
 }

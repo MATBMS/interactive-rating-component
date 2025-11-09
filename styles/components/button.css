@@ -1,0 +1,12 @@
+button {
+  /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding: var(--spacing-200) var(--spacing-1300);
+  width: 100%;
+  /* style */
+  border-radius: 22.5px;
+  background: var(--color-orange-500);
+}

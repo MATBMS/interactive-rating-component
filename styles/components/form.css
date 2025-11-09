@@ -1,0 +1,45 @@
+form {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200);
+  width: 100%;
+}
+
+/* Hide the default radio buttons */
+.rating-container input[type="radio"] {
+  display: none;
+}
+
+/* Add rating spacing */
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Style the labels to look like circular buttons */
+.rating-container label {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding: var(--spacing-100) var(--spacing-200);
+  gap: var(--spacing-100);
+  /* style */
+  border-radius: 21px;
+  background-color: var(--color-grey-900);
+  /* typography */
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.87px;
+  color: var(--color-grey-500);
+}
